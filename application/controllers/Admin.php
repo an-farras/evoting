@@ -31,10 +31,10 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/v_menu');
 	}
 
-	public function mahasiswa()
+	public function pemilih()
 	{
-		$data['mahasiswa'] = $this->m_admin->get_mahasiswa();
-		$this->load->view('admin/v_mahasiswa', $data);
+		$data['pemilih'] = $this->m_admin->get_pemilih();
+		$this->load->view('admin/v_pemilih', $data);
 	}
 
 	public function create()
