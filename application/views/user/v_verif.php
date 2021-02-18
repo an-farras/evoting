@@ -18,8 +18,8 @@
         <div class="row">
             <div class="col-sm-6 col-md-4 col-md-offset-4">
                 <div class="account-wall">
-                    <center><img style="width: 60%" src="<?php echo base_url(); ?>assets/images/kpum-white.png" alt=""></center><br>
-                    <center> <h2> PEMILIHAN RAYA MAHASISWA POLTEKSSN 2020</h2></center><br>
+                    <center><img style="width: 60%" src="<?php echo base_url(); ?>assets/images/fire-kanji.jpg" alt=""></center><br>
+                    <center> <h2> PEMILIHAN UMUM HOKAGE DESA KONOHA</h2></center><br>
                     <?php if ($this->session->flashdata('fail') != ''): ?>
                     <div class="col-md-12">
                         <div class="alert alert-danger">
@@ -28,7 +28,7 @@
                     </div>
                     <?php endif ?>
                   <form class="form-signin" method="post" action="<?php echo base_url(); ?>index.php/pilih/verif">
-                    <input type="text" name="nomor_induk" class="form-control" autocomplete="off" placeholder="Masukkan NIM" required autofocus><br>
+                    <input type="text" name="nomor_induk" class="form-control" autocomplete="off" placeholder="Masukkan NIK" required autofocus><br>
                     <input type="text" name="random_number" class="form-control" autocomplete="off" placeholder="Masukkan Token" required autofocus><br>
 
                     <input type="submit" name="masuk" class="btn btn-lg btn-primary btn-block" value="Verifikasi">
