@@ -122,7 +122,7 @@ class M_admin extends CI_Model {
 		}
 	}
 
-	public function get_mahasiswa()
+	public function get_pemilih()
 	{
 		return $this->db->get('data_pemilih')->result();
 	}
