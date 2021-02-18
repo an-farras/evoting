@@ -3,7 +3,9 @@ WEBSITE PEMILIHAN RAYA
 
 Tujuan: untuk melakukan pemilihan raya berdasarkan voting secara elektronik berbasis web
 
-Fitur: Untuk pemilih:
+Fitur: 
+
+Untuk pemilih:
 
 Fitur login
 
