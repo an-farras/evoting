@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tabulasi SEMA</title>
+	<title>Tabulasi Hokage</title>
 	<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     <script src="<?php echo base_url(); ?>assets/js/jquery-1.6.2.js"></script>
@@ -25,7 +25,7 @@
     
 	<div class="row">
 		<div class="span6">
-			<h1>Perhitungan Suara SEMA</h1>
+			<h1>Perhitungan Suara Hokage</h1>
 		</div>
 		<div class="span3">
 			

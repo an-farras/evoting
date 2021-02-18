@@ -47,7 +47,7 @@
 
                     <table width="100%" height="200px" border="0" bordercolor="#FFFFFF">
                     	<tr align="center">
-                        	<td width="20%" id="admin_hover"><a href="<?php echo base_url(); ?>index.php/admin/mahasiswa"><h4 style="color: white">List Pemilih</h4></a></td>
+                        	<td width="20%" id="admin_hover"><a href="<?php echo base_url(); ?>index.php/admin/pemilih"><h4 style="color: white">List Pemilih</h4></a></td>
                           <td width="20%" id="admin_hover"><a href="<?php echo base_url(); ?>index.php/admin/tabulasi"><h4 style="color: white">Hitung suara</h4></td>
                           <td width="20%" id="admin_hover"><a href="<?php echo base_url(); ?>index.php/admin/create"><h4 style="color: white">Buat Pemilihan</h4></td>  
                       </tr>
