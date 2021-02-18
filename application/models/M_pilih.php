@@ -3,11 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_pilih extends CI_Model {
 
-	public function verif($npm,$token)
+	public function verif($nik,$token)
 	{
 		$status1;
 		$status2;
-		$npm = $this->db->where('npm', $npm)->get('data_pemilih')->row();
+		$nik = $this->db->where('nik', $nik)->get('data_pemilih')->row();
 
 		if ($this->db->affected_rows() > 0) {
 			$status1 = true;
@@ -28,15 +28,15 @@ class M_pilih extends CI_Model {
 				return false;
 			}
 
-			if ($npm->status == 1) {
+			if ($nik->status == 1) {
 				return false;
 			}
 
 			$array = array(
-				'npm' => $npm->npm,
+				'nik' => $nik->nik,
 				'token' => $token->identitas,
 				'status_suara' => $token->status,
-				'status_pemilih' => $npm->status,
+				'status_pemilih' => $nik->status,
 				'login_user' => true
 			);
 			
@@ -55,7 +55,7 @@ class M_pilih extends CI_Model {
 
 	public function get_id()
 	{
-		return $this->db->where('status', '0')->order_by('id',rand())->get('surat_suara',1)->row();
+		return $this->db->where('status', '')->order_by('id',rand())->get('surat_suara',1)->row();
 	}
 
 	public function update_suara($id, $ident)
@@ -96,10 +96,10 @@ class M_pilih extends CI_Model {
 		} 
 	}
 
-	public function update_data_pemilih($npm)
+	public function update_data_pemilih($nik)
 	{
 		$object = array('status' => 1 );
-		$this->db->where('npm', $npm)->update('data_pemilih', $object);
+		$this->db->where('nik', $nik)->update('data_pemilih', $object);
 
 		if ($this->db->affected_rows() > 0) {
 			return true;
