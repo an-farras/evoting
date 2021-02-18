@@ -91,7 +91,7 @@ class Pilih extends CI_Controller {
 
 	public function update_data_pemilih()
 	{
-		$this->m_pilih->update_data_pemilih($this->session->userdata('npm'));
+		$this->m_pilih->update_data_pemilih($this->session->userdata('nik'));
 	}
 
 }
